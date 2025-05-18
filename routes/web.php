@@ -3,6 +3,7 @@
 use App\Http\Controllers\CompetitionController;
 use App\Http\Controllers\DatasetController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Dataset;
 use App\Models\Competition;
@@ -11,6 +12,9 @@ use App\Models\User;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users', [UserController::class, 'index'])
+    ->name('user');
 
 Route::get('/competitions', [CompetitionController::class, 'index'])
     ->name('competitions.index');

@@ -13,6 +13,9 @@
         <li><a href="/datasets" class="text-[18px] hover:text-sky-500 {{ $active === 'datasets' ? 'text-sky-500 font-semibold' : 'text-gray-500' }}">
           Datasets
         </a></li>
+        <li><a href="/users" class="text-[18px] hover:text-sky-500 {{ $active === 'users' ? 'text-sky-500 font-semibold' : 'text-gray-500' }}">
+          Users
+        </a></li>
         <li><a href="#" class="text-[18px] hover:text-sky-500 {{ $active === 'models' ? 'text-sky-500 font-semibold' : 'text-gray-500' }}">
           Models
         </a></li>
