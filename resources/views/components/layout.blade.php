@@ -6,6 +6,17 @@
     <title>{{ config('app.name', 'Kaggle') }}</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- jQuery & Select2 JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#tags').select2({
+          placeholder: 'Select one or more tags'
+        });
+      });
+    </script>
 
     @vite(['resources/js/app.js'])
 </head>

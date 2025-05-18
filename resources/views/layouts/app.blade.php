@@ -6,8 +6,10 @@
     <title>{{ config('app.name', 'Kaggle') }}</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     @vite(['resources/js/app.js'])
+    @livewireStyles
 </head>
 <body class="relative overflow-visible">
     <x-navbar></x-navbar>
@@ -29,7 +31,7 @@
 
     </div> -->
 
-
+@livewireScripts
 
 </body>
 </html>
